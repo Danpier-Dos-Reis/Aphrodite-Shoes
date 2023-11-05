@@ -1,0 +1,26 @@
+@keyframes slidetoButtom{
+    from{
+        transform: translateY(-6rem);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.mouseover-disccount{
+    opacity: 1;
+    transition: opacity 1s ease;
+
+    animation-name: slidetoButtom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.mouseout-disccount{
+    opacity: 0;
+    transition: opacity 1s ease;
+}

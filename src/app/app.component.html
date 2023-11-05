@@ -1,0 +1,25 @@
+<div class="header">
+  <h1>Aphrodite</h1>
+  <div class="links">
+    <a href="">Women</a>
+    <a href="">Men</a>
+    <a href="">Kids</a>
+    <a href="">Clothing</a>
+  </div>
+</div>
+<div class="main_background">
+  <img src="https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970_1280.jpg" alt="background_Panel">
+  <div class="card_animation" (mouseover)="displayAnimation()" (mouseout)="hideAnimation()">
+    <span>40% off</span>
+    <div [ngClass]="display ? 'mouseover-disccount':'mouseout-disccount' ">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum eligendi praesentium porro tempore? Aliquid officiis est voluptates molestiae assumenda at pariatur iure consequuntur! Temporibus libero quo nesciunt odit iure?</p>
+    </div>
+  </div>
+</div>
+<section class="shop_section">
+  <app-home-shop-content></app-home-shop-content>
+</section>
+<section class="accessories_section">
+  <app-home-accessories-content></app-home-accessories-content>
+</section>
+<router-outlet></router-outlet>

@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    height: 7rem;
+    width: 100%;
+    background-color: #EFEFEF;
+    align-items: center;
+
+    h1 {
+        font-size: 3rem;
+        margin-left: 8%;
+        color: #185ADB;
+    }
+}
+
+.links {
+    margin: 0 3% 0 35%;
+
+    a {
+        font-size: 1.8rem;
+        text-decoration: none;
+    }
+}
+
+.links a:nth-child(n-1) {
+    margin-right: 3rem;
+}
+
+.main_background {
+    position: relative;
+    width: 100%;
+    height: 45rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card_animation {
+        background-color: rgba(239, 239, 239, 0.1);
+        position: absolute;
+        top: 20rem;
+        left: 6rem;
+        border-radius: 10px;
+        width: 450px;
+        height: 9rem;
+        cursor: pointer;
+
+        span {
+            color: #EFEFEF;
+            font-size: 8rem;
+            margin-left: 4px;
+            position: absolute;
+        }
+
+        p {
+            background-color: rgba(239, 239, 239, 0.1);
+            margin-top: 8rem;
+            color: #EFEFEF;
+            position: relative
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header h1 { margin-left: 8% }
+    .links{margin-left: 30%; }
+}
+
+@media screen and (max-width: 1125px) {
+    .header h1 { margin-left: 5% }
+    .links{margin-left: 28%; }
+}
+
+@media screen and (max-width: 1032px) {
+    .links{margin-left: 25%; }
+}
+
+@media screen and (max-width: 992px) {
+    .links{margin-left: 20%; }
+}
+
+@media screen and (max-width: 926px) {
+    .links{margin-left: 15%; }
+}
+
+@media screen and (max-width: 860px) {
+    .links{margin-left: 5%; }
+}
+
+@import "../assets/transitions.scss";

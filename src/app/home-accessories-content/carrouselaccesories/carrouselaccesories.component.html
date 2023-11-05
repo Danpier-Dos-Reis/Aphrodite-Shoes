@@ -1,0 +1,23 @@
+<swiper-container
+navigation="true"
+space-between="-150"
+effect="coverflow"
+grap-crusor="true"
+centered-slides="false"
+slides-per-view="3"
+coverflow-effect-rotate="0"
+coverflow-effect-stretch="200"
+coverflow-effect-depth="0"
+coverflow-effect-modifier="0"
+coverflow-effect-slide-shadows="false"
+>
+    <swiper-slide *ngFor="let img of pictures">
+        <div class="cards">
+            <div class="text_content">
+                <h3>Title Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae accusamus!</p>
+            </div>
+            <img [src]="img" alt="image">
+        </div>
+    </swiper-slide>
+</swiper-container>

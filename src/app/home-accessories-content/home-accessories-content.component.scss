@@ -1,0 +1,20 @@
+.container{
+    width: 100%; height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+    div{
+        width: 50%;
+        hr{
+            color: #EFEFEF;
+            margin-top: 2rem;
+        }
+    }
+    p{
+        color: #0A1931;
+        font-size: 4rem;
+        width: 50%;
+        margin: 0 0 0 5%;
+    }
+}

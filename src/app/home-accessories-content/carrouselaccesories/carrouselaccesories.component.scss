@@ -1,0 +1,29 @@
+swiper-container{
+    width: 87%; height: 30rem;
+    margin: -3rem 0 0 6rem;
+    padding-top: 2rem;
+    
+}
+
+swiper-slide{
+    height: 54rem;
+    width: 295px;
+}
+
+.cards{
+    margin-bottom: 50px;
+    box-shadow: 0 30px 30px rgba(0,0,0,1);
+    border-radius: 15px;
+    height: 420px;
+    width: 295px;
+    position: relative;
+    .text_content{
+        position: absolute;
+        padding: 15px;
+    }
+    img{
+        border-radius: 15px;
+        max-width: 100%;
+        height: 100%;
+    }
+}
